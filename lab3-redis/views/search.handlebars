@@ -1,0 +1,17 @@
+<h1>{{title}}</h1>
+<h2>{{searchTerm}}</h2>
+<main>
+    {{#if showList.length}}
+        <ul>
+            {{#each showList}}
+                <li>
+                    <a aria-label="Link to the show {{this.show.name}}" class="show-entry" href="/show/{{this.show.id}}">{{this.show.name}}</a>
+                </li>
+            {{/each}}
+        </ul>
+    {{else}}
+        <p class="not-found">We're sorry, but no results were found for {{searchTerm}}.</p>
+    {{/if}}
+</main>
+
+<a class="home-link" href="/">Back to Home Page</a>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/public/site.css">
+</head>
+    <body>
+        <form method="post" action="/search">
+        <label for="search-term">Keywords</label>
+        <input id="search-term" type="text" name="searchTerm" placeholder="Keyword or Keywords"/>
+
+        <button id="search" type="submit" value="search">Search</button>
+        </form>
+        {{{body}}}
+    </body>
+</html>

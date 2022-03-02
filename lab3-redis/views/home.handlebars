@@ -1,0 +1,16 @@
+<h1>{{title}}</h1>
+<main>
+    <p>Welcome to my cool site where I cache results. Heck yeah. Based on much of my Lab 8 from CS546.</p>
+    <h2><a class="show-entry" href="/popularsearches">Most popular searches</a></h2>
+    {{#if showList.length}}
+        <ul>
+            {{#each showList}}
+                <li>
+                    <a aria-label="Link to the show {{this.name}}" class="show-entry" href="/show/{{this.id}}">{{this.name}}</a>
+                </li>
+            {{/each}}
+        </ul>
+    {{else}}
+        <p class="not-found">No API data. Hehe oopsies.</p>
+    {{/if}}
+</main>

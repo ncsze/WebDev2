@@ -1,0 +1,60 @@
+body{
+    background-color: lightskyblue;
+    color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    background-color: blanchedalmond;
+    color:#b18000;
+    border-color: burlywood;
+}
+
+img{
+    padding: 35px;
+}
+
+.home-link{
+    font-size: 20px;
+}
+
+p.error{
+    background-color: gray;
+    color:black;
+    font-family: 'Comic Sans MS',sans-serif;
+    font-size: large;
+    padding: 10%;
+}
+
+ /*Credit for template: W3Schools*/
+ /* unvisited link */
+ a:link {
+    color: #804300;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #4d2c09;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  /* selected link */
+  a:active {
+    color: burlywood;
+    text-decoration: underline;
+  } 
+
+dd{
+    font-size: 15px;
+}
+
+dt{
+    font-size: 18px;
+}

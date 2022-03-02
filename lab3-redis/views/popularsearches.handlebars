@@ -1,0 +1,17 @@
+<h1>{{title}}</h1>
+<p>These are the most-requested searches on this site.</p>
+<main>
+    {{#if searchList.length}}
+        <ol>
+            {{#each searchList}}
+                <li>
+                    <p>{{this}}</p>
+                </li>
+            {{/each}}
+        </ol>
+    {{else}}
+        <p class="not-found">Nobody has searched for anything yet. Seize this opportunity to be the first!</p>
+    {{/if}}
+</main>
+
+<a class="home-link" href="/">Back to Home Page</a>

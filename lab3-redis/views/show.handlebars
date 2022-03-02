@@ -1,0 +1,54 @@
+<main>
+    <div>
+        <h1>{{show.name}}</h1>
+        {{#if show.image.medium}}
+            <img alt="Image: {{show.name}}" src={{show.image.medium}}>
+        {{else}}
+            No image found.
+        {{/if}}
+        <dl>
+            <dt>Language</dt>
+            {{#if show.language}}
+                <dd>{{show.language}}</dd>
+            {{else}}
+                <dd>None found</dd>
+            {{/if}}
+
+            <dt>Genres</dt>
+            <dd>
+                {{#if show.genres.length}}
+                <ul>
+                    {{#each show.genres}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                {{else}}
+                None found
+            {{/if}}
+            </dd>
+
+            <dt>Average Rating</dt>
+            {{#if show.rating.average}}
+                <dd>{{show.rating.average}}</dd>
+            {{else}}
+                <dd>None found</dd>
+            {{/if}}
+
+            <dt>Network</dt>
+            {{#if show.network.name}}
+                <dd>{{show.network.name}}</dd>
+            {{else}}
+                <dd>None found</dd>
+            {{/if}}
+
+            <dt>Summary</dt>
+            {{#if show.summary}}
+                <dd>{{show.summary}}</dd>
+            {{else}}
+                <dd>None found</dd>
+            {{/if}}
+            
+        </dl>
+    </div>
+</main>
+<a class="home-link" href="/">Back to Home Page</a>
